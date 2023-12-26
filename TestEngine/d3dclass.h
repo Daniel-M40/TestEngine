@@ -44,7 +44,7 @@ public:
 	void GetWorldMatrix(XMMATRIX&);
 	void GetOrthoMatrix(XMMATRIX&);
 
-	void GetVideoCardInfo(char*, int&);
+	void GetVideoCardInfo(char* cardName, int& memory);
 
 	void SetBackBufferRenderTarget();
 	void ResetViewport();
