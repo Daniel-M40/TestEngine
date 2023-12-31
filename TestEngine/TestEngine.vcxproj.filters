@@ -16,6 +16,24 @@
     <Filter Include="Source Files\WinFramework">
       <UniqueIdentifier>{379ee1a3-3b54-4cc5-9e03-830ed0915cfe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Application">
+      <UniqueIdentifier>{c46a801e-881a-4c62-b918-c243bdf2bf2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\D3D">
+      <UniqueIdentifier>{0a1ade70-7137-4a71-90c9-10fae35b4563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{b84d2ee9-a4d0-424f-a387-d79d0cc30306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Colours">
+      <UniqueIdentifier>{de196e0f-d564-4325-9b32-dc5908f63a25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera">
+      <UniqueIdentifier>{f3c1a20f-eeb0-4d23-ab3b-5b6a2ba297ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model">
+      <UniqueIdentifier>{33f93ff8-13b4-4db8-a735-7946acb0e955}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -30,28 +48,31 @@
     <ClInclude Include="TestEngine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="applicationclass.h">
-      <Filter>Source Files\WinFramework</Filter>
-    </ClInclude>
-    <ClInclude Include="inputclass.h">
-      <Filter>Source Files\WinFramework</Filter>
-    </ClInclude>
     <ClInclude Include="systemclass.h">
       <Filter>Source Files\WinFramework</Filter>
     </ClInclude>
+    <ClInclude Include="applicationclass.h">
+      <Filter>Source Files\Application</Filter>
+    </ClInclude>
     <ClInclude Include="d3dclass.h">
-      <Filter>Source Files\WinFramework</Filter>
+      <Filter>Source Files\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="inputclass.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Colorshaderclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modelclass.h">
+      <Filter>Source Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="cameraclass.h">
+      <Filter>Source Files\Camera</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TestEngine.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="applicationclass.cpp">
-      <Filter>Source Files\WinFramework</Filter>
-    </ClCompile>
-    <ClCompile Include="inputclass.cpp">
-      <Filter>Source Files\WinFramework</Filter>
     </ClCompile>
     <ClCompile Include="systemclass.cpp">
       <Filter>Source Files\WinFramework</Filter>
@@ -59,8 +80,26 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files\WinFramework</Filter>
     </ClCompile>
+    <ClCompile Include="applicationclass.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
     <ClCompile Include="d3dclass.cpp">
-      <Filter>Source Files\WinFramework</Filter>
+      <Filter>Source Files\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="inputclass.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.vs">
+      <Filter>Source Files\Colours</Filter>
+    </ClCompile>
+    <ClCompile Include="Colorshaderclass.cpp">
+      <Filter>Source Files\Colours</Filter>
+    </ClCompile>
+    <ClCompile Include="modelclass.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="cameraclass.cpp">
+      <Filter>Source Files\Camera</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -75,5 +114,11 @@
     <Image Include="TestEngine.ico">
       <Filter>Resource Files</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="color.ps">
+      <Filter>Source Files\Colours</Filter>
+    </None>
   </ItemGroup>
 </Project>
