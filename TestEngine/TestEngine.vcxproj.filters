@@ -34,6 +34,9 @@
     <Filter Include="Source Files\Model">
       <UniqueIdentifier>{33f93ff8-13b4-4db8-a735-7946acb0e955}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Textures">
+      <UniqueIdentifier>{13e959bb-d416-4211-aea9-6fd501019f09}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -69,6 +72,12 @@
     <ClInclude Include="cameraclass.h">
       <Filter>Source Files\Camera</Filter>
     </ClInclude>
+    <ClInclude Include="textureclass.h">
+      <Filter>Source Files\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="textureshaderclass.h">
+      <Filter>Source Files\Textures</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TestEngine.cpp">
@@ -101,6 +110,12 @@
     <ClCompile Include="cameraclass.cpp">
       <Filter>Source Files\Camera</Filter>
     </ClCompile>
+    <ClCompile Include="textureclass.cpp">
+      <Filter>Source Files\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="textureshaderclass.cpp">
+      <Filter>Source Files\Textures</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="TestEngine.rc">
@@ -119,6 +134,12 @@
     <None Include="packages.config" />
     <None Include="color.ps">
       <Filter>Source Files\Colours</Filter>
+    </None>
+    <None Include="texture.ps">
+      <Filter>Source Files\Textures</Filter>
+    </None>
+    <None Include="texture.vs">
+      <Filter>Source Files\Textures</Filter>
     </None>
   </ItemGroup>
 </Project>
